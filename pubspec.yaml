@@ -1,0 +1,48 @@
+name: myapp
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # === Your Required Packages ===
+  cupertino_icons: ^1.0.8
+  camera: ^0.12.0
+  google_generative_ai: ^0.4.7
+  image_picker: ^1.2.1
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  fl_chart: ^1.1.1
+  intl: ^0.20.2
+  shared_preferences: ^2.2.2 
+  http: ^1.6.0
+
+  # 🔥 Animation Packages (God Level Smooth Effects के लिए) 🔥
+  animate_do: ^3.3.4
+  flutter_animate: ^4.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1 # 🔥 फ़ोन की होम स्क्रीन पर लोगो लगाने वाला पैकेज
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png
+    - assets/images/app_logo.png # आपका नया लोगो
+    - assets/images/body_3d.png # 🔥 आपका नया 3D मस्कुलर इंसान
+
+# 🔥 App Icon Generator Configuration 🔥
+flutter_launcher_icons:
+  android: true # "ic_launcher" की जगह true करना ज़्यादा सुरक्षित है
+  ios: false 
+  image_path: "assets/images/app_logo.png"
