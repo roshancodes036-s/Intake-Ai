@@ -20,7 +20,10 @@ Intake AI was developed specifically for the Frostbyte Hackathon, targeting two 
 
 ## 📸 Project Gallery & Demo
 
-### 🎥 [Watch the Full App Demo on YouTube](YOUR_YOUTUBE_VIDEO_LINK_HERE)
+### 🎥 Watch the Full App Demo on YouTube 
+
+[![Intake AI Demo](https://img.youtube.com/vi/GeW556LP538/maxresdefault.jpg)](https://youtu.be/GeW556LP538)
+
 
 <div align="center">
   <img src="1000129858.png" width="800" alt="Intake AI Mockups"/>
