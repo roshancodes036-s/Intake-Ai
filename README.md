@@ -1,67 +1,84 @@
-# 🍏 Intake AI - Next-Gen AI Nutrition Tracker
+# 🍏 Intake AI - The Next-Gen Computer Vision Nutrition Tracker
 
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
 
-**Intake AI** is a premium, million-dollar UI/UX fitness and nutrition tracking application. Say goodbye to manual calorie logging—just point your camera at your food, and let the AI Vision engine do the magic! 
-
-Designed with buttery-smooth animations, a futuristic 3D body hologram, and advanced predictive analytics, Intake AI redefines how you track your health.
-
----
-
-## ✨ Key Features
-
-* 🤖 **AI Vision Scanner:** Powered by Google Gemini 1.5 Flash. Snap a picture of your meal or barcode, and the AI instantly extracts accurate Macros (Calories, Protein, Carbs, Fats).
-* 🧍‍♂️ **3D Hologram Body Analytics:** A dynamic, visually rich dashboard that tracks your real-time body progress and macro intake visually.
-* 🕸️ **Macro Balance Matrix:** Advanced spider radar charts to visualize your health, consistency, and macronutrient balance.
-* 📈 **Predictive AI Forecast:** Line charts providing actionable fitness insights and predicting your caloric trend for the upcoming week.
-* ✨ **"God-Level" UI/UX:** Built with buttery smooth staggered animations, tactile haptic feedback (bouncy buttons), and floating glass-morphism elements.
-* 🌙 **Premium Theming:** Fully responsive Dark and Light modes tailored for a premium SaaS feel.
-* 💾 **Offline First:** Lightning-fast local storage using `sqflite` ensures your daily logs are always available.
+**Stop typing, start snapping.** Intake AI is a premium, AI-powered health and fitness tracker that eliminates the friction of manual calorie logging. Just point your camera at your food, and let the AI Vision engine do the magic!
 
 ---
 
-## 📸 Screenshots
+## 🏆 Built for Frostbyte Hackathon 2026
+
+Intake AI was developed specifically for the Frostbyte Hackathon, targeting two major themes:
+1. **Artificial Intelligence & Machine Learning:** Utilizing LLMs for real-time image recognition and strict JSON macro extraction.
+2. **Healthcare & BioTech:** Providing users with an effortless, highly visual way to track their daily nutrition and metabolic health.
+
+---
+
+## 📸 Project Gallery & Demo
+
+### 🎥 [Watch the Full App Demo on YouTube](YOUR_YOUTUBE_VIDEO_LINK_HERE)
 
 <div align="center">
-  <img src="Home%20Dashboard.png" width="250" alt="Home Dashboard"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="AI%20Scanner.png" width="250" alt="AI Scanner"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="Progress%20Hologram.png" width="250" alt="Progress Hologram"/>
+  <img src="1000129858.png" width="800" alt="Intake AI Mockups"/>
 </div>
+*(Note: Replace `1000129858.png` with your actual mockup image file name once uploaded)*
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ God-Level Features
 
-* **Framework:** Flutter (Dart)
-* **AI Engine:** `google_generative_ai` (Gemini 1.5 Flash)
-* **Database:** `sqflite` (Local SQL Database)
-* **Animations:** `animate_do`, `flutter_animate`
-* **Charts:** `fl_chart`
-* **Camera:** `camera`, `image_picker`
-* **State Management & Storage:** `setState`, `shared_preferences`
+* 🤖 **AI Vision Scanner (Gemini 1.5 Flash):** Snap a picture of any meal (from a simple apple to complex local dishes like *Fried Empanadas*). The AI instantly recognizes the food and extracts accurate Macros (Calories, Protein, Carbs, Fats).
+* 🛡️ **Crash-Proof Smart Extractor:** Engineered a custom `try-catch` JSON extractor that perfectly cleans and parses AI responses, ensuring the app never crashes even if the LLM hallucinates markdown text.
+* 🧍‍♂️ **3D Hologram Body Analytics:** A dynamic, futuristic dashboard that tracks your real-time body progress and macro intake visually.
+* 🕸️ **Macro Balance Matrix:** Advanced spider radar charts (`fl_chart`) to visualize your health, consistency, and macronutrient balance.
+* 📈 **Predictive AI Forecast:** Line charts providing actionable fitness insights and predicting your caloric trend for the upcoming week based on historical data.
+* ✨ **Premium SaaS UI/UX:** Built with buttery smooth staggered cascade animations (`animate_do`, `flutter_animate`), tactile haptic feedback (bouncy buttons), and sleek dark-mode glass-morphism elements.
+* 💾 **Offline-First Architecture:** Lightning-fast local storage using `sqflite` (Version 2 with automatic schema upgrades) ensures your daily logs are always private and available instantly.
+
+---
+⏭️ What's Next? (Future Scope)
+Wearable Integration: Syncing with Apple Health & Google Fit to automatically map "Calories Burned vs. Calories Consumed".
+Personal AI Nutritionist: A chat interface where Gemini acts as your personal coach based on your 30-day Intake data.
+Barcode API Integration: Connecting the existing UI to a massive global UPC food database.
+---
+📂 Folder Structure
+lib/
+ ┣ core/               # Constants, Colors, Globals, API Keys
+ ┣ features/           # App Features (Home, Scanner, Progress, Profile)
+ ┣ services/           # AI Vision Service, Camera Helper, Database Helper
+ ┣ app.dart            # Main App Wrapper & Theme Notifier
+ ┗ main.dart           # Application Entry Point
+
+
+## 🛠️ Tech Stack & Architecture
+
+* **Frontend:** Flutter & Dart (Cross-platform, 60fps performance)
+* **AI Engine:** `google_generative_ai` (Google Gemini 1.5 Flash API)
+* **Local Database:** `sqflite` (Relational SQL Database for offline logging)
+* **State Management:** `setState` & `shared_preferences`
+* **Hardware Integrations:** `camera` (for custom scanner UI) & `image_picker`
+* **Visuals & Charts:** `fl_chart`, `flutter_animate`, `animate_do`
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started (Run Locally)
 
-Follow these steps to run the project locally on your machine.
+Want to test the magic yourself? Follow these steps:
 
 ### Prerequisites
 * Flutter SDK (^3.9.0)
-* Dart SDK
-* Android Studio / VS Code
+* Android Studio / Xcode
 * **Google Gemini API Key**
 
 ### Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/roshancodes036-su/Intake-Ai.git](https://github.com/roshancodes036-su/Intake-Ai.git)
+   git clone [https://gitlab.com/roshancodes036-su/Intake-Ai.git](https://gitlab.com/roshancodes036-su/Intake-Ai.git)
    cd Intake-Ai
 
 Install dependencies:
@@ -73,19 +90,8 @@ class ApiKeys {
   static const String geminiApiKey = 'YOUR_GEMINI_API_KEY_HERE';
 }
 
-Generate App Icons (Optional):
-dart run flutter_launcher_icons
-
 Run the app:
 flutter run
-
-📂 Folder Structure
-lib/
- ┣ core/               # Constants, Colors, Globals, API Keys
- ┣ features/           # App Features (Home, Scanner, Progress, Profile)
- ┣ services/           # AI Vision Service, Camera Helper, Database Helper
- ┣ app.dart            # Main App Wrapper & Theme Notifier
- ┗ main.dart           # Application Entry Point
 
 👨‍💻 Developed By
 Roshan Chaurasiya Or Akash Chaurasiya 
