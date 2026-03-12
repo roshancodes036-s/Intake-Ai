@@ -24,14 +24,6 @@ Intake AI was developed specifically for the Frostbyte Hackathon, targeting two 
 
 [![Intake AI Demo](https://img.youtube.com/vi/GeW556LP538/maxresdefault.jpg)](https://youtu.be/GeW556LP538)
 
-
-<div align="center">
-  <img src="1000129858.png" width="800" alt="Intake AI Mockups"/>
-</div>
-*(Note: Replace `1000129858.png` with your actual mockup image file name once uploaded)*
-
----
-
 ## ✨ God-Level Features
 
 * 🤖 **AI Vision Scanner (Gemini 1.5 Flash):** Snap a picture of any meal (from a simple apple to complex local dishes like *Fried Empanadas*). The AI instantly recognizes the food and extracts accurate Macros (Calories, Protein, Carbs, Fats).
